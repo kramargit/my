@@ -1,0 +1,229 @@
+.cart {
+    width: 100%;
+    padding: 96px 0 128px 0;
+
+    &_wrap {
+        .wrapper(@width: 75%, @margin: 0 auto, @display: flex);
+        justify-content: space-between;
+    }
+
+    &_first_product {
+        background-image: url('../images/photos/gallery_img3.jpg');
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &_second_product {
+        background-image: url('../images/photos/gallery_img7.svg');
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &_type {
+        margin: 0 0 42px 0;
+    }
+
+    &_quantity span {
+        padding: 0 0 0 40px;
+    }
+
+    &_price span {
+        color: #F16D7F;
+
+        &:before {
+            content: '\0024';
+        }
+
+    }
+
+    
+    &_left {
+        width: 652px;
+        min-height: 652px;
+        box-sizing: border-box;
+
+        &_product {
+            display: flex;
+            box-sizing: border-box;
+            margin: 0 0 40px 0;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+            height: 306px;
+
+            &_img {
+                width: 262px;
+                height: 306px;
+                background-color: #f7e4e2;
+            }
+
+            &_desc {
+                padding: 22px 0 62px 31px;
+                box-sizing: border-box;
+            }
+
+            &_title {
+                .text(@style: normal, @weight: normal, @size: 24px, @line-h: 29px, @align: left, @clr: #222, @z: 1);
+                display: block;
+                text-transform: uppercase;
+            }
+
+            &_info {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+                display: block;
+                margin: 0 0 6px 0;
+            }
+
+            &_close {
+                width: 18px;
+                height: 18px;
+                border: none;
+                margin: 28px 0 0 135px;
+                background-image: url('../images/icons/hide_menu_close_btn.png');
+                background-color: #FFF;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+            }
+        }
+
+        &_btn_box {
+           display: flex;
+           justify-content: space-between; 
+           margin: 72px 0 0 0;
+        }
+
+        &_btn {
+            width: 235px;
+            height: 50px;
+            background: #FFF;
+            border: 1px solid #A4A4A4;
+            .text(@style: normal, @weight: 300, @size: 14px, @line-h: 17px, @align: center, @clr: #A4A4A4, @z: 1);
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                background: #A4A4A4;
+                color: #FFF;
+            }
+
+            &:active {
+                background: #A4A4A4;
+                color: #FFF;
+            }
+        }
+    }
+
+    &_right {
+        &_title {
+            .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: left, @clr: #222, @z: 1);
+            text-transform: uppercase;
+            display: block;
+            margin: 0 0 20px 0;
+        }
+
+        &_form_input {
+            display: block;
+            width: 285px;
+            height: 44px;
+            margin: 0 0 21px 0;
+            border: 1px solid #A4A4A4;
+            color: #222;
+            outline: none;
+            padding-top: 1.5px;
+            padding-left: 16.73px;
+            box-sizing: border-box;
+        }
+
+        &_form_input::placeholder {
+            color: #222;
+        }
+
+        &_form_country::placeholder {
+            color: #B1B1B1;
+        }
+
+        &_form_btn {
+            width: 101.41px;
+            height: 35px;
+            .text(@style: normal, @weight: 300, @size: 11px, @line-h: 13px, @align: center, @clr: #4A4A4A, @z: 1);
+            text-transform: uppercase;
+            border: 1px solid #A4A4A4;
+            background: #FFF;
+            margin: 0 0 57.5px 0;
+
+            &:hover {
+                background: #A4A4A4; 
+                color: #FFF;
+            }
+
+            &:active {
+                background: #A4A4A4; 
+                color: #FFF;
+            }
+        }
+
+        &_form_total_info {
+            width: 285px;
+            background: #F5F3F3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 39px 34px 42px 44px;
+            box-sizing: border-box;
+
+            &_sub {
+                .text(@style: normal, @weight: normal, @size: 11px, @line-h: 13px, @align: left, @clr: #4A4A4A, @z: 1);
+                text-transform: uppercase;
+                margin: 0 0 12px 0;
+            }
+
+            &_sub span:before {
+                content: '\0024';
+                margin: 0 0 0 30px;
+            }
+
+            &_grand {
+                .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: left, @clr: #222, @z: 1);
+                text-transform: uppercase;
+                margin: 0 0 21px 0;
+            }
+
+            &_grand span {
+                color: #F16D7F;
+            }
+
+            &_grand span:before {
+                content: '\0024';
+                margin: 0 0 0 30px;
+                color: #F16D7F;
+            }
+
+            &_hr {
+                width: 220px;
+                height: 1px;
+                background: #E2E2E2;
+                margin: 0 0 17px 0;
+            }
+
+            &_submit {
+                width: 220px;
+                height: 50px;
+                background: #FFF;
+                border: 1px solid #F16D7F;
+                .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: center, @clr: #F16D7F, @z: 1);
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    background: #F16D7F;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
