@@ -1,0 +1,294 @@
+@keyframes anim-one {
+  0% {
+    background: #f3f3f3;
+  }
+
+  12.5% {
+    background: #cacaca;
+  }
+
+  25% {
+    background: #929191;
+  }
+  37.5% {
+    background: #000;
+  }
+  50% {
+    background: #000;
+  }
+  62.5% {
+    background: #000;
+  }
+  75% {
+    background: #000;
+  }
+  87.5% {
+    background: #000;
+  }
+}
+
+@keyframes anim-two {
+  0% {
+    background: #000;
+  }
+
+  12.5% {
+    background: #f3f3f3;
+  }
+
+  25% {
+    background: #cacaca;
+  }
+  37.5% {
+    background: #929191;
+  }
+  50% {
+    background: #000;
+  }
+  62.5% {
+    background: #000;
+  }
+  75% {
+    background: #000;
+  }
+  87.5% {
+    background: #000;
+  }
+}
+
+@keyframes anim-three {
+  0% {
+    background: #000;
+  }
+
+  12.5% {
+    background: #000;
+  }
+
+  25% {
+    background: #f3f3f3;
+  }
+  37.5% {
+    background: #cacaca;
+  }
+  50% {
+    background: #929191;
+  }
+  62.5% {
+    background: #000;
+  }
+  75% {
+    background: #000;
+  }
+  87.5% {
+    background: #000;
+  }
+}
+
+@keyframes anim-four {
+  0% {
+    background: #000;
+  }
+
+  12.5% {
+    background: #000;
+  }
+
+  25% {
+    background: #000;
+  }
+  37.5% {
+    background: #f3f3f3;
+  }
+  50% {
+    background: #cacaca;
+  }
+  62.5% {
+    background: #929191;
+  }
+  75% {
+    background: #000;
+  }
+  87.5% {
+    background: #000;
+  }
+}
+
+@keyframes anim-five {
+  0% {
+    background: #000;
+  }
+
+  12.5% {
+    background: #000;
+  }
+
+  25% {
+    background: #000;
+  }
+  37.5% {
+    background: #000;
+  }
+  50% {
+    background: #f3f3f3;
+  }
+  62.5% {
+    background: #cacaca;
+  }
+  75% {
+    background: #929191;
+  }
+  87.5% {
+    background: #000;
+  }
+}
+
+@keyframes anim-six {
+  0% {
+    background: #000;
+  }
+
+  12.5% {
+    background: #000;
+  }
+
+  25% {
+    background: #000;
+  }
+  37.5% {
+    background: #000;
+  }
+  50% {
+    background: #000;
+  }
+  62.5% {
+    background: #f3f3f3;
+  }
+  75% {
+    background: #cacaca;
+  }
+  87.5% {
+    background: #929191;
+  }
+}
+
+@keyframes anim-seven {
+  0% {
+    background: #929191;
+  }
+
+  12.5% {
+    background: #000;
+  }
+
+  25% {
+    background: #000;
+  }
+  37.5% {
+    background: #000;
+  }
+  50% {
+    background: #000;
+  }
+  62.5% {
+    background: #000;
+  }
+  75% {
+    background: #f3f3f3;
+  }
+  87.5% {
+    background: #cacaca;
+  }
+}
+
+@keyframes anim-eight {
+  0% {
+    background: #cacaca;
+  }
+
+  12.5% {
+    background: #929191;
+  }
+
+  25% {
+    background: #000;
+  }
+  37.5% {
+    background: #000;
+  }
+  50% {
+    background: #000;
+  }
+  62.5% {
+    background: #000;
+  }
+  75% {
+    background: #000;
+  }
+  87.5% {
+    background: #f3f3f3;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.container {
+  width: 570px;
+  height: 383px;
+  margin: 100px auto;
+}
+
+.rect {
+  width: 50px;
+  height: 100px;
+  background: black;
+}
+
+.first {
+  transform: translate(250px);
+  animation: anim-one 1s infinite;
+}
+
+.second {
+  transform: translate(351px) translateY(-59px) rotate(45deg);
+  animation: anim-two 1s infinite;
+}
+
+.third {
+  transform: translate(384px) translateY(-56px) rotate(90deg);
+  animation: anim-three 1s infinite;
+}
+
+.fourth {
+  transform: translate(351px) translateY(-51px) rotate(-45deg);
+  animation: anim-four 1s infinite;
+}
+
+.five {
+  transform: translate(250px) translateY(-117px);
+  animation: anim-five 1s infinite;
+}
+
+.six {
+  transform: translate(148px) translateY(-250px) rotate(45deg);
+  animation: anim-six 1s infinite;
+}
+
+.seven {
+  transform: translate(116px) translateY(-455px) rotate(90deg);
+  animation: anim-seven 1s infinite;
+}
+
+.eight {
+  transform: translate(148px) translateY(-658px) rotate(-45deg);
+  animation: anim-eight 1s infinite;
+}
+
+
+/* #f3f3f3
+  #cacaca
+  #929191*/
