@@ -1,0 +1,91 @@
+.footer_bot {
+    background: @bg-footer-bot;
+    padding: 24px 0 0 0;
+    height: @h-footer-bot;
+    box-sizing: border-box;
+
+    &_wrap {
+        .wrapper(@width: 75%, @margin: 0 auto, @display: flex);
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    &_left {
+        margin-top: 6px;
+
+        &_text {
+            .text(@style: normal, @weight: normal, @size: 16px,
+             @line-h: 19px, @align: left, @clr: #FBFBFB, @z: 1)
+        }
+    }
+
+    &_right_list {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    &_righ_facebook {
+        display: block;
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background: @bg-footer-bot-righ;
+        background-position: 0 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background-position: 0 -33px;
+        }
+
+    }
+
+    &_righ_instagram {
+        display: block;
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background: @bg-footer-bot-righ;
+        background-position: -32.45px 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background-position: -32.45px -33px;
+        }
+
+    }
+
+    &_righ_pinterest{
+        display: block;
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background: @bg-footer-bot-righ;
+        background-position: -64.9px 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background-position: -64.9px -33px;
+        }
+
+    }
+
+    &_righ_twitter{
+        display: block;
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background: @bg-footer-bot-righ;
+        background-position: -97.35px 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background-position: -97.35px -33px;
+        }
+    }
+
+}
